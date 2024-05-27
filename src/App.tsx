@@ -8,8 +8,6 @@ function App() {
     const {
         contract_address,
         counter_value,
-        recent_sender,
-        owner_address,
         contract_balance,
         sendIncrement,
         sendDeposit,
@@ -29,7 +27,7 @@ function App() {
                     <div className='Hint'>{contract_address?.slice(0, 30) + "..."}</div>
                     <b>Our contract Balance</b>
                     {contract_balance && (
-                            <div className='Hint'>{fromNano(contract_balance)}</div>
+                            <div className='Hint'>{fromNano(contract_balance)} Ton</div>
                         )}
                 </div>
 
